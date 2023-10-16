@@ -11,34 +11,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="login.js"></script>
 </head>
-<body>
-    <header class="bg-primary-subtle">
-        <div class="container d-flex justify-content-between align-items-center py-3">
-            <div>
-                <a href="index.php">
-                    <img src="imatges/ApartamentsFiguerencs.png" alt="Logo" width="50" height="50">
-                </a>
-               
-            </div>
-            <div>
-            <button type="button" class="btn btn-info mx-2"  onclick="window.location.href='reservar.php'">Reservar</button>
-                <button type="button" class="btn btn-info mx-2">Contactar</button>
-                <button type="button" class="btn btn-info mx-2">Ubicació</button>
-            </div>
-            <div>
-            <button type="button" class="btnlogin btn btn-primary" id="BotonLogin" onclick="window.location.href='login.php'">Entrar/Registrar</button>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <!-- Example Code -->
 
-            </div>
-        </div>
-        
-    </header>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nom d'usuari</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label"
+          >Contrasenya</label
+        >
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Recorda el meu nom d'usuari</label
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Iniciar sessió</button>
+      <div class="mb-3">
+        <p>No tens un compte creat? <a href="#">Registrat</a></p>
+      </div>
+    </form>
 
-
-
-
-
-<div>
-
-</div>
-</body>
+    <!-- End Example Code -->
+  </body>
 </html>

@@ -12,9 +12,9 @@
     </div>
     <div>
         <button type="button" class="btnlogin btn btn-primary" id="BotonLogin"
-            onclick="window.location.href='login.php'">Entrar/Registrar</button>
+            onclick="window.location.href='login.php'">Entrar</button>
         <button type="button" class="btnlogin btn btn-primary" id="BotonLogin"
-            onclick="window.location.href='login.php'">Entrar/Registrar</button>
+            onclick="window.location.href='signup.php'">Registrar</button>
     </div>
 
 </div>

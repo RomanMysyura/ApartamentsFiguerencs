@@ -11,8 +11,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="login.js"></script>
 </head>
-<body>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <!-- Example Code -->
 
-<h1>prova</h1>
-</body>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nom d'usuari</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label"
+          >Contrasenya</label
+        >
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Recorda el meu nom d'usuari</label
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Iniciar sessió</button>
+      <div class="mb-3">
+        <p>No tens un compte creat? <a href="#">Registrat</a></p>
+      </div>
+    </form>
+
+    <!-- End Example Code -->
+  </body>
 </html>

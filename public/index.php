@@ -1,5 +1,13 @@
+<?php
+
+/**
+ * @author: Roman Mysyura rmysyura@cendrassos.net Adrià Poncelas aponcelas@cendrassos.net
+ **/
+
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,50 +19,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="login.js"></script>
 </head>
+
 <body>
     <header class="bg-primary-subtle">
-        <div class="container d-flex justify-content-between align-items-center py-3">
-            <div>
-                <a href="index.php">
-                    <img src="imatges/ApartamentsFiguerencs.png" alt="Logo" width="50" height="50">
-                </a>
-               
-            </div>
-            <div>
-                <button type="button" class="btn btn-info mx-2"  onclick="window.location.href='reservar.php'">Reservar</button>
-                <button type="button" class="btn btn-info mx-2">Contactar</button>
-                <button type="button" class="btn btn-info mx-2">Ubicació</button>
-            </div>
-            <div>
-            <button type="button" class="btnlogin btn btn-primary" id="BotonLogin" onclick="window.location.href='login.php'">Entrar/Registrar</button>
-
-            </div>
-        </div>
+        <?php include("../src/views/menu.php"); ?>
     </header>
 
     <div class="container ">
-      <h2 class="titolpagina">Luxe i confort ben a prop teu!</h2>
-      
+        <h2 class="titolpagina">Luxe i confort ben a prop teu!</h2>
+
     </div>
     <div class="input-group divbuscar">
-            <input type="search" class="form-control rounded formularibuscar" placeholder="Buscar els meus apartaments" aria-label="Search" aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary buttonbuscar">Buscar</button>
-          </div>
-          
-    
-
-
-
-   
-    
+        <input type="search" class="form-control rounded formularibuscar" placeholder="Buscar els meus apartaments"
+            aria-label="Search" aria-describedby="search-addon" />
+        <button type="button" class="btn btn-outline-primary buttonbuscar">Buscar</button>
+    </div>
 
 
 
 
 
 
-<div>
 
-</div>
+
+
+
+
+
+
+    <div>
+
+    </div>
 </body>
+
 </html>

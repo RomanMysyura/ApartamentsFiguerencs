@@ -1,40 +1,41 @@
 <?php
-// Establecer la conexión a la base de datos
-$servername = "10.2.5.205";
-$username = "root"; 
-$password = "1234"; 
-$database = "bddapartaments";
+$host = '10.2.5.205';
+$dbname = 'bddapartaments';
+$username = 'root';
+$password = '1234';
 
-$conn = new mysqli('10.2.5.205', 'root', 'tu_contraseña', 'bddapartaments');
-
-
-// Comprobar la conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+try {
+    $db = new PDO("mysql:host=10.2.5.205;dbname=$dbname", $username, $password);
+    // Habilitar mensajes de error de PDO
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Error de conexión a la base de datos: " . $e->getMessage());
 }
 
-// Recuperar los datos del formulario
-$name = $_POST['name'];
-$last_name = $_POST['last_name'];
-$telephone = $_POST['telephone'];
-$email = $_POST['email'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $last_name = $_POST['last_name'];
+    $telephone = $_POST['telephone'];
+    $email = $_POST['email'];
 
-// Consulta SQL para insertar los datos en la tabla "users"
-$sql = "INSERT INTO users (name, last_name, telephone, email) VALUES ('$name', '$last_name', '$telephone', '$email')";
+    // Preparar la consulta SQL
+    $sql = "INSERT INTO users (name, last_name, telephone, email) VALUES (:name, :last_name, :telephone, :email)";
 
-if ($conn->query($sql) === TRUE) {
-    // Registro exitoso
-    echo '<script>alert("Usuario registrado exitosamente");</script>';
-    header('Location:index.php');
-exit();
-} else {
-    // Error al registrar
-    echo '<script>alert("Error al registrar: ' . $conn->error . '");</script>';
-    header('Location:.index.php');
-exit();
+    // Preparar la sentencia
+    $stmt = $db->prepare($sql);
+
+    // Vincular los parámetros
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':last_name', $last_name);
+    $stmt->bindParam(':telephone', $telephone);
+    $stmt->bindParam(':email', $email);
+
+    // Ejecutar la consulta
+    try {
+        $stmt->execute();
+        echo "Datos insertados correctamente.";
+    } catch (PDOException $e) {
+        die("Error al insertar datos: " . $e->getMessage());
+    }
 }
-
-
-// Cerrar la conexión a la base de datos
-$conn->close();
 ?>

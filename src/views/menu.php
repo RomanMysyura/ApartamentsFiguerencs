@@ -11,10 +11,9 @@
         <button type="button" class="btn btn-info mx-2">Ubicació</button>
     </div>
     <div>
+        <a href="login.php"><button type="button" class="btnlogin btn btn-primary">Entrar</button></a>
         <button type="button" class="btnlogin btn btn-primary" id="BotonLogin"
-            onclick="window.location.href='login.php'">Entrar/Registrar</button>
-        <button type="button" class="btnlogin btn btn-primary" id="BotonLogin"
-            onclick="window.location.href='login.php'">Entrar/Registrar</button>
+            onclick="window.location.href='signup.php'">Registrar</button>
     </div>
 
 </div>

@@ -1,23 +1,20 @@
-<?php 
-session_start();
+<?php
+// session_start();
+// $db = new PDO("mysql:host=localhost;dbname=nombre_de_la_base_de_datos", "usuario_db", "contraseña_db");
 
-$db = new PDO("mysql:host=localhost;dbname=nombre_de_la_base_de_datos", "usuario_db", "contraseña_db");
+// $username = $_REQUEST['username'];
+// $password = $_REQUEST['password'];
 
-$usename = $_POST['username'];
-$password = $_POST['password'];
+// $stmt = $db->prepare("SELECT * FROM usuarios WHERE username = ?");
+// $stmt->execute([$username]);
+// $user = $stmt->fetch();
 
-$stmt = $db->prepare("SELECT * FROM users WHERE user = ?");
-$stmt->execute(['username']);
-$user = $stmt->fetch();
-
-if ($user && password_verify($password, $user['password'])) {
-  // Autenticación exitosa
-  $_SESSION['username'] = $username;
-  header("Location: inicio_exitoso.php");
-} else {
-  // Autenticación fallida
-  header("Location: inicio_fallido.php");
-}
+// if ($user && password_verify($password, $user['password'])) {
+//     $_SESSION['username'] = $username;
+//     header("Location: inicio_exitoso.php");
+// } else {
+//     header("Location: inicio_fallido.php");
+// }
 ?>
 
 
@@ -29,6 +26,7 @@ if ($user && password_verify($password, $user['password'])) {
     <title>Apartaments Figuerencs</title>
     <link rel="stylesheet" href="login.css">
     <link rel="icon" href="imatges/ApartamentsFiguerencs.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -37,38 +35,30 @@ if ($user && password_verify($password, $user['password'])) {
 <body class="p-3 m-0 border-0 bd-example m-0 border-10">
 <div class="position-absolute top-50 start-50 translate-middle shadow p-3 mb-5 bg-white rounded">
     <!-- Example Code -->
-    <form method = "POST">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Nom d'usuari</label>
-        <input
-          type="text"
-          class="form-control"
-          id="username"
-          aria-describedby="emailHelp"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label"
-          >Contrasenya</label
-        >
-        <input
-          type="password"
-          class="form-control"
-          id="password"
-        />
-      </div>
+    <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter the username."/>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input type="password" class="form-control" id="password" placeholder="Enter the password."/>
+          </div>
+        </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1"
-          >Recorda el meu nom d'usuari</label
-        >
+        <label class="form-check-label" for="exampleCheck1">Remember me</label>
       </div>
-      <button type="submit" class="btn btn-primary">Iniciar sessió</button>
+      <button type="submit" class="btn btn-primary">Log In</button>
       <div class="mb-3">
-        <p>No tens un compte creat? <a href="signup.php">Registrat</a></p>
+        <p>You don't have an account? <a href="signup.php">Sign In</a></p>
       </div>
     </form>
 </div>
-    <!-- End Example Code -->
-  </body>
+</body>
 </html>

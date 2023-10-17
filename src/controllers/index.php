@@ -1,5 +1,5 @@
-<?php 
-
-function ctrlIndex() {
-    include "../src/views/index.php";
+<?php
+function controllerindex(){
+    
+    include '../src/views/index.php';
 }

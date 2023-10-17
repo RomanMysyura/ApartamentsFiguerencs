@@ -24,6 +24,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartaments Figuerencs</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imatges/ApartamentsFiguerencs.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -35,6 +36,15 @@
 <body class="p-3 m-0 border-0 bd-example m-0 border-10">
 <div class="position-absolute top-50 start-50 translate-middle shadow p-3 mb-5 bg-white rounded">
     <!-- Example Code -->
+=======
+    <?php controllerLibs() ?>
+    <link rel="icon" href="imatges/ApartamentsFiguerencs.png" type="image/x-icon">
+    
+</head>
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+    <!-- Example Code -->
+    <?php controllerMenu() ?>
+>>>>>>> 513540294e2b026acb53485837528610471b9d4c
     <form>
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>

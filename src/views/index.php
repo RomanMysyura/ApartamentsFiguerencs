@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 /**
@@ -111,3 +112,20 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de inicio</title>
+    <?php controllerLibs() ?>
+
+</head>
+<body>
+    <!-- Agrega contenido HTML para la página de inicio -->
+    
+    <?php controllerMenu() ?>
+    <h3>sdgsdg</h3>
+   
+</body>
+</html>
+>>>>>>> 513540294e2b026acb53485837528610471b9d4c

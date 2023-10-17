@@ -8,6 +8,6 @@
 </head>
 <body>
 <?php controllerMenu() ?>
-    <h3>RESERVAR</h3>
+    <h3>UBICACIÓ</h3>
 </body>
 </html>

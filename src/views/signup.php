@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartaments Figuerencs</title>
     <link rel="icon" href="imatges/ApartamentsFiguerencs.png" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="login.js"></script>
+    <?php controllerLibs() ?>
 </head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+<?php controllerMenu() ?>
+>>>>>>> 58c31ee (versio 4)
 <div class="position-absolute top-50 start-50 translate-middle shadow p-3 mb-5 bg-white rounded">
     <form action="..\controllers\signup.php" method="post">
         <div class="mb-3">
@@ -34,7 +32,8 @@
         </div>
         <button type="submit" class="btn btn-primary">Registrar</button>
         <div class="mb-3">
-            <p>¿Ya tienes un cuenta creada? <a href="#">Inicia sesión</a></p>
+
+            <p>¿Ya tienes un cuenta creada? <a href="index.php?r=login">Inicia sesión</a></p>
         </div>
     </form>
 </div>

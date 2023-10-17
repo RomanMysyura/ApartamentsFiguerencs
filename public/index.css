@@ -29,6 +29,10 @@ body{
     }
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 58c31ee (versio 4)
 .btnnav{
     
     cursor: pointer;
@@ -66,4 +70,11 @@ body{
     -webkit-box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
+<<<<<<< HEAD
+=======
+  }
+  .container{
+    width: 100% !important;
+    max-width: 100000px !important;
+>>>>>>> 58c31ee (versio 4)
   }

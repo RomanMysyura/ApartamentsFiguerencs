@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Apartaments Figuerencs</title>
     <link rel="icon" href="imatges/ApartamentsFiguerencs.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
@@ -41,3 +42,13 @@
 </div>
 </body>
 </html>
+=======
+    <title>Document</title>
+    <?php controllerLibs() ?>
+</head>
+<body>
+<?php controllerMenu() ?>
+    <h3>RESERVAR</h3>
+</body>
+</html>
+>>>>>>> 58c31ee (versio 4)

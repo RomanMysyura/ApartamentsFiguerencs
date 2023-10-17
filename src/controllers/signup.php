@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 $host = '10.2.5.205';
 $dbname = 'bddapartaments';
 $username = 'root';
@@ -39,3 +40,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+=======
+function controllerentrar(){
+    
+    include '../src/views/signup.php';
+}
+>>>>>>> 58c31ee (versio 4)

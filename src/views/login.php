@@ -11,6 +11,7 @@
 <body class="p-0 m-0 border-0 bd-example m-0 border-0">
     <!-- Example Code -->
     <?php controllerMenu() ?>
+    <div class="position-absolute top-50 start-50 translate-middle shadow p-3 mb-5 bg-white rounded">
     <form>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nom d'usuari</label>
@@ -42,7 +43,7 @@
         <p>No tens un compte creat? <a href="#">Registrat</a></p>
       </div>
     </form>
-
+</div>
     <!-- End Example Code -->
   </body>
 </html>

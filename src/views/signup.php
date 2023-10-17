@@ -11,7 +11,6 @@
 
 <body class="p-0 m-0 border-0 bd-example m-0 border-0">
 <?php controllerMenu() ?>
->>>>>>> 58c31ee (versio 4)
 <div class="position-absolute top-50 start-50 translate-middle shadow p-3 mb-5 bg-white rounded">
     <form action="..\controllers\signup.php" method="post">
         <div class="mb-3">
@@ -32,7 +31,6 @@
         </div>
         <button type="submit" class="btn btn-primary">Registrar</button>
         <div class="mb-3">
-
             <p>¿Ya tienes un cuenta creada? <a href="index.php?r=login">Inicia sesión</a></p>
         </div>
     </form>

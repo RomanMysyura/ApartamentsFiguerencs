@@ -12,7 +12,7 @@
 <body class="p-0 m-0 border-0 bd-example m-0 border-0">
 <?php controllerMenu() ?>
 <div class="position-absolute top-50 start-50 translate-middle shadow p-3 mb-5 bg-white rounded">
-    <form action="..\controllers\signup.php" method="post">
+<form method="POST" action="../controllers/registrar.php">
         <div class="mb-3">
             <label for="name" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" />
@@ -29,7 +29,12 @@
             <label for="email" class="form-label">Correo Electrónico</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" />
         </div>
-        <button type="submit" class="btn btn-primary">Registrar</button>
+        
+
+       <a class="" href="index.php?r=registrar"><button type="button" class="btnlogin btn btn-primary"
+                id="BotonLogin">Registrar</button></a>
+
+        
         <div class="mb-3">
             <p>¿Ya tienes un cuenta creada? <a href="index.php?r=login">Inicia sesión</a></p>
         </div>

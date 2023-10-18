@@ -1,13 +1,15 @@
-body{
-    background-color: #e9f0fa !important;
+body {
+    background-color: #ffffff !important;
 }
-.titolpagina{
+
+.titolpagina {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.btnlogin{
-    
+
+.btnlogin {
+
     cursor: pointer;
     outline: 0;
     color: #fff;
@@ -21,7 +23,8 @@ body{
     padding: 6px 12px;
     font-size: 16px;
     border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
     :hover {
         color: #fff;
         background-color: #0b5ed7;
@@ -30,8 +33,8 @@ body{
 
 }
 
-.btnnav{
-    
+.btnnav {
+
     cursor: pointer;
     outline: 0;
     color: #fff;
@@ -45,15 +48,17 @@ body{
     padding: 6px 12px;
     font-size: 16px;
     border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
     :hover {
         color: #fff;
         background-color: #0b5ed7;
         border-color: #0a58ca;
     }
-   
+
 
 }
+
 .btnnav:hover {
     color: #fff;
     background-color: #0b5ed7;
@@ -61,14 +66,30 @@ body{
 }
 
 
-.input-group {
-    width: 70% !important;
-    margin: 0 auto; 
-    -webkit-box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
-  }
-  .container{
+
+.container {
     width: 100% !important;
     max-width: 100000px !important;
-  }
+}
+
+.texttitol {
+    color: white;
+    background-color: black;
+    height: 60px;
+    padding-top: 10px;
+    -webkit-box-shadow: 8px 37px 80px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 8px 37px 80px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 8px 37px 80px 0px rgba(0, 0, 0, 0.55);
+}
+.divapartaments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px;
+   
+}
+
+.card {
+    width: 350px; /* Establece el ancho de cada tarjeta (25% de ancho) */
+    margin-bottom: 20px; /* Agrega espacio inferior entre las tarjetas */
+}

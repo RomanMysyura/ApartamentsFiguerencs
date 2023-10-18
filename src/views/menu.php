@@ -19,5 +19,6 @@
         <a class="" href="index.php?r=signup"><button type="button" class="btnlogin btn btn-primary"
                 id="BotonLogin">Registrar</button></a>
     </div>
+    
 
 </div>
